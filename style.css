@@ -1,0 +1,17 @@
+:root{
+--softOrange: hsl(35, 77%, 62%);
+--softred: hsl(5, 85%, 63%);
+--OffWhite: hsl(36, 100%, 99%);
+--grayishBlue: hsl(233, 8%, 79%);
+--verydarkBlue: hsl(240, 100%, 5%);
+--darkGrayishBlue: hsl(236, 13%, 42%);
+}
+*
+*::after,
+*::before{
+box-sizing: border-box;
+margin: 0;
+}
+body{
+    font-size: 1rem;
+}
