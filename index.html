@@ -11,9 +11,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | News homepage</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,37 +31,60 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo.svg" alt="" srcset="">
-      <ul>
-        <a href="">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>New</li>
-        </a>
-        <a href="">
-          <li>Popular</li>
-        </a>
-        <a href="">
-          <li>Trending</li>
-        </a>
-        <a href="">
-          <li>Categories</li>
-        </a>
-      </ul>
-    </header>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <div class="main">
+      <header>
+        <div class="logo logoSite">
+          <img src="./assets/images/logo.svg" alt="" srcset="" />
+        </div>
+
+        <div class="nav">
+          
+            <img
+              src="./assets/images/icon-menu.svg"
+              alt=""
+              srcset=""
+              class="nav-open-btn"
+            />
+          
+          <div class="sideNav">
+            <ul>
+              <a href="">
+                <li>Home</li>
+              </a>
+              <a href="">
+                <li>New</li>
+              </a>
+              <a href="">
+                <li>Popular</li>
+              </a>
+              <a href="">
+                <li>Trending</li>
+              </a>
+              <a href="">
+                <li>Categories</li>
+              </a>
+            </ul>
+            <img
+          src="./assets/images/icon-menu-close.svg"
+          alt=""
+          srcset=""
+          class="nav-close-btn"
+        />
+          </div>
+          
+        </div>
+      </header>
+      The Bright Future of Web 3.0? We dive into the next evolution of the web
+      that claims to put the power of the platforms back into the hands of the
+      people. But is it really fulfilling its promise? Read more New Hydrogen VS
+      Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The
+      Downsides of AI Artistry What are the possible adverse effects of
+      on-demand AI image generation? Is VC Funding Drying Up? Private funding by
+      VC firms is down 50% YOY. We take a look at what that means. 01 Reviving
+      Retro PCs What happens when old PCs are given modern upgrades? 02 Top 10
+      Laptops of 2022 Our best picks for various needs and budgets. 03 The
+      Growth of Gaming How the pandemic has sparked fresh opportunities.
+    </div>
 
     <div class="attribution">
       Challenge by
@@ -65,4 +93,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./app.js"></script>
 </html>
