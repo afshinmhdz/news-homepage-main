@@ -87,6 +87,9 @@ button{
 .web3-title{
   margin-bottom: 2rem;
 }
+.web-3-desktop{
+  display: none;
+}
 .newSection{
   background: var(--verydarkBlue);
   padding-bottom:2rem ;
@@ -117,7 +120,7 @@ hr{
   justify-content: flex-start;
   margin: 2rem 0rem;
 }
-.detile{
+.detail{
   margin-left: 1rem;
   margin-top: 0;
 }
@@ -127,4 +130,56 @@ hr{
 }
 .detile h2{
   margin: 0;
+}
+
+@media only screen and (min-width: 1040px) {
+ body{
+  max-width: 70%;
+  margin: 0 auto;
+ }
+  .sideNav {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    
+  }
+
+  .sideNav ul{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+  }
+  .logo{
+   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav-open-btn,
+  .nav-close-btn{
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-areas: 'myArea myArea';
+    width: 100%;
+  }
+  .web-3-mobile{
+    display: none;
+
+  }
+  .web-3-desktop{
+    margin:0.75rem 0;
+    display: block;
+ max-width: 100%;
+ width: 60%;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+
+  }
 }
