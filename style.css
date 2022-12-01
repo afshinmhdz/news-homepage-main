@@ -17,7 +17,6 @@ body {
 }
 .main {
   margin: 1.5rem 0.5rem;
-  height: 100vh;
 }
 
 .sideNav {
@@ -43,7 +42,6 @@ body {
 .show-nav{
   display: block;
   width: 68%;
-
   height: 100vh;
   position: absolute;
   right: 0px;
@@ -58,18 +56,20 @@ body {
 }
 ul li {
   list-style-type: none;
-
-  padding-bottom: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  
 }
 a {
   text-decoration: none;
   color: var(--verydarkBlue);
   font-size: 1.5rem;
 }
-#web-3-mobile{
+.web-3-mobile{
   margin:0.75rem 0;
   max-width: 100%;
-
+  overflow: hidden;
 }
 p{
   line-height: 1.5rem;
@@ -109,7 +109,6 @@ hr{
 }
 .bottomSection{
   margin: 1rem 0;
-  
 }
 .bottomSection img{
   max-width: 100%;
@@ -124,35 +123,32 @@ hr{
   margin-left: 1rem;
   margin-top: 0;
 }
-.detile h1,p{
+.detail h1,p{
   color: var(--grayishBlue);
   margin: 0;
 }
-.detile h2{
+.detail h2{
   margin: 0;
 }
 
 @media only screen and (min-width: 1040px) {
  body{
-  max-width: 70%;
-  margin: 0 auto;
+    max-width: 70%;
+    margin: 0 auto;
  }
   .sideNav {
     display: block;
     width: 100%;
     margin-right: 0;
-    
   }
 
   .sideNav ul{
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 10rem;
   }
   .logo{
-   
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -168,18 +164,54 @@ hr{
   }
   .web-3-mobile{
     display: none;
-
   }
   .web-3-desktop{
     margin:0.75rem 0;
     display: block;
- max-width: 100%;
- width: 60%;
+    max-width: 100%;
   }
   .container{
     display: grid;
-    grid-template-columns: auto auto auto;
-   
-
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto  ;
+    gap: 30px;
+  }
+  .headImage{
+    grid-column: 1 /3;
+  }
+  .newSection{
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  ul li:hover{
+    color: #ea2828;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    transition: 1s;
+    border-bottom: 3px solid #ea2828;
+    margin-bottom: 5px;
+ 
+  }
+  .web3-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    grid-column:1/3 ;
+  }
+  .web3-title h1{
+    width: 50%;
+    max-width:45%;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .web-3-description{
+    width: 50%;
+    padding: 0.5rem  0.5rem 0  0.5rem;
+  }
+  .web-3-desktop{
+    margin: 0;
+  }
+  .web3-title{
+    margin-bottom: 0rem;
   }
 }
